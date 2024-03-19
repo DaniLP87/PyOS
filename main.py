@@ -57,7 +57,7 @@ print("8: Shut down computer")
 print("9: Update")
 print("10: Restart Computer")
 print("11: Exit")
-print("12: (COMING SOON) Terminal")
+print("12: (COMING SOON) Terminal !!!:(select this option to boot into beta mode {if you dont know its an unreleased version with many MANYYY bugs})")
 print("13: Windows 11 Installer")
 print("14: Reinstall PyOS")
 
@@ -162,10 +162,14 @@ if select1 == "11":
   os.system("clear")
   exit()
 if select1 == "12":
-  print("Terminal:")
-  print("This is a terminal COMING SOON.")
+  print("Beta mode")
+  print("y to start beta mode and x to leave")
   print("")
-  input()
+  inpo12 = input("ur choice")
+  if inpo12 == "y":
+    os.system("python3 debug-beta.py")
+  else:
+    os.system("py main.py")
   os.system("python3 main.py")
 if select1 == "13":
   os.system("python3 windows11setup.py")#´
