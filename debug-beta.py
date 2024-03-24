@@ -46,7 +46,7 @@ print("")
 print("")
 print("What do you want to do?")
 print("1: ")
-print("2: ")
+print("2: File Manager")
 print("3: Web Browser")
 print("4: ")
 print("5: Reboot into Normal Mode")
@@ -87,8 +87,13 @@ if select1 == "6":
   os.system("python3 main.py")
 if select1 == "5":
   print("NOT HERT")
-  os.system("python3 betacrash.py")
+  os.system("python3 main.py")
 if select1 == "12":
     os.system("clear")
     sh = input("$ ")
     os.system(sh)
+if select1 == "2":
+  # i don undrstand python
+  print("File Manager")
+  print("-------------")
+  file = input("nothing still her :|")
